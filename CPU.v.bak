@@ -16,64 +16,99 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
   
  
   // ----------------- Fetch ----------------- //
- 	wire hazardFetchWrite, hazardPCwrite, RegDst, Jump, Branch, MemtoReg, ALUsrc, RegWrite, zero;
- 	wire[31:0] PCplusFourD, nextPC, PCplusFour, branchAddress, nextInstAddr, jumpAddress, extendedAndShifted;
+ 	wire[31:0] PCplusFour, D_PCplusFour, D_instruction, nextPC, D_branchAddress, jumpAddress, D_extendedAndShifted;
  	wire [27:0] jumpComponent;
-	wire [5:0] opcode, funct;
+	wire [5:0] D_opcode, D_funct;
+	wire [1:0] D_ALUop, PCSrc;
+  wire hazardPCenable, hazardIFIDenable, hazardIDEXenable, 
+       D_RegDst, D_Jump, D_Branch, D_MemtoReg, D_ALUsrc, D_RegWrite, D_zero;
 	assign PCplusFour = PC + 4;
-	assign opcode = instruction[31:26]; 
-	assign funct = instruction[5:0];
-	assign branchAddress = extendedAndShifted + PCplusFour; 
-  assign jumpAddress = {PCplusFour[31:28], jumpComponent};
-	always@(reset) dataAddress = 0;
-	   
-  ProgramCounter programCounter(nextPC, clk, rst, PC);
-  mux32b2_1 mux_PC(jumpAddress, nextInstAddr, Jump, nextPC);
-	mux32b2_1 mux_branch(branchAddress, PCplusFour, zero&&Branch, nextInstAddr);
-  leftshift2_32b shiftLeftJump(instruction[25:0], jumpComponent); // This is a size mismatch that will have the first 4 bits unknown. Inconsequential.
-  IF_ID_reg IFIDreg(hazardFetchWrite, clk, rst, instruction, PCplusFour, PCplusFourD);
+
+	mux32b4_1 mux_pc(PCplusFour, D_branchAddress, jumpAddress, 0, PCSrc, nextPC);
+  ProgramCounter programCounter(hazardPCenable, nextPC, clk, rst, PC);
+  
+  IF_ID_reg IFIDreg(hazardIFIDenable, clk, rst, instruction, D_instruction, PCplusFour, D_PCplusFour);
  	// ------------------------------------------ //
  	
  	
   // ----------------- Decode ----------------- //
- 	wire [4:0] writeReg;
-	wire [1:0] ALUop;
-  wire [31:0] readData1, readData2, writeData, signExtend;
-	reg_file regFile(reset, RegWrite, clk, instruction[25:21], instruction[20:16], writeReg, writeData, readData1, readData2);
-	controlunit controlUnit(opcode, RegDst, Jump, Branch, MemRead, MemtoReg, MemWrite, ALUsrc, RegWrite, ALUop);
-  signextender signExtender(instruction[15:0], signExtend);
-	leftshift2_32b shiftLeftSignExtend(signExtend, extendedAndShifted);
-	ID_EX_reg IDEXreg(clk, rst, 
-              D_PCplusFour, D_signExtend, D_rs, D_rt, D_rd, D_readData1, D_readData2,
-              D_ALUop, D_regWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_addi,
-              X_PCplusFourOut, X_signExtendOut, X_rs, X_rt, X_rd, X_readData1, X_readData2, 
-              X_ALUop, X_RegWrite, X_MemtoReg, X_Branch, X_MemRead, X_MemWrite, X_RegDst, X_ALUsrc, X_addi);
-  controlMux({RegDst, Jump, Branch, MemRead, MemToReg, MemWrite, ALUSrc, RegWrite, ALUop}); 
- 	// ------------------------------------------ //
+  wire [31:0] D_readData1, D_readData2, D_writeData, D_signExtend, 
+              X_readData1, X_readData2, X_writeData, X_signExtend, X_PCplusFour;
+  wire [5:0] X_funct;
+  wire [4:0] D_rs, D_rt, D_rd, X_rs, X_rt, X_rd, D_writeReg;
+ 	wire [3:0] X_EX;
+	wire [2:0] X_M;
+  wire [1:0] X_WB;
+  wire X_zero;
+  assign D_rs = D_instruction[25:21];
+  assign D_rt = D_instruction[20:16];
+  assign D_rd = D_instruction[15:11];
+	assign D_opcode = D_instruction[31:26]; 
+	assign D_funct = D_instruction[5:0];
+	assign D_branchAddress = D_extendedAndShifted + D_PCplusFour; 
+  assign jumpAddress = {D_PCplusFour[31:28], jumpComponent};
+  assign PCSrc = {D_Jump, D_zero&&D_Branch};
+	always@(reset) dataAddress = 0;
+	
+	leftshift2_32b shiftLeftJump({6'b0, D_instruction[25:0]}, jumpComponent); // size mismatch is fine
+	
+	reg_file regFile(reset, D_RegWrite, clk, D_rs, D_rt, D_writeReg, D_writeData, D_readData1, D_readData2);
+	controlunit controlUnit(D_opcode, D_RegDst, D_Jump, D_Branch, D_MemRead, D_MemtoReg, D_MemWrite, D_ALUsrc, D_RegWrite, D_ALUop);
+  signextender signExtender(D_instruction[15:0], D_signExtend);
+	leftshift2_32b shiftLeftSignExtend(D_signExtend, D_extendedAndShifted);
+	ID_EX_reg IDEXreg(clk, rst, hazardIDEXenable,
+              D_PCplusFour, D_signExtend, D_rs, D_rt, D_rd, D_readData1, D_readData2, D_ALUop, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero, D_funct,
+              X_PCplusFour, X_signExtend, X_rs, X_rt, X_rd, X_readData1, X_readData2, X_WB, X_M, X_EX, X_zero, X_funct);
+  // ------------------------------------------ //
  	
 
   // ----------------- Execution ----------------- //
-  wire [3:0] operation;
- 	wire [31:0] aluInput, ALUresult;
+  wire [31:0] aluInput, writeData, aluInput2, ALUresult, M_ALUresult, M_writeData, W_writeData;
+ 	wire [4:0] X_writeReg, M_writeReg;
+ 	wire [3:0] operation;
+ 	wire [2:0] M_M;
+  wire [1:0] M_WB, fwdA, fwdB;
+  wire M_zero;
  	// ALU
-	alu alu(ALUresult, zero, operation, readData1, aluInput);
-  alu_control aluControl(ALUop, funct, operation);
-	mux32b2_1 mux_ALU(signExtend, readData2, ALUsrc, aluInput);	
+  mux32b4_1 mux_alu1(X_readData1, M_ALUresult, W_writeData, 0, fwdA, aluInput);
+  mux32b4_1 mux_writeData(X_readData2, M_ALUresult, W_writeData, 0, fwdB, writeData);
+  mux32b2_1 mux_alu2(writeData, X_signExtend, X_EX[0], aluInput2);
+  
+  alu_control aluControl(X_EX[2:1], X_funct, operation);
+	alu alu(ALUresult, zero, operation, aluInput, aluInput2);
+   
+                                          // double check that 3 is RegDst and 0 is ALUSrc
+  mux5b2_1  mux_writeRegister(X_rd, X_rt, X_EX[3], X_writeReg);
+	  
+	EX_MEM_reg EXMEMreg(clk, reset, ALUresult, writeData, X_writeReg, X_WB, X_M, X_zero,
+                               M_ALUresult,M_writeData, M_writeReg, M_WB, M_M, M_zero);
+
 	// --------------------------------------------- //
 	
 	
 	
   // ----------------- Memory Access ----------------- //
-  assign dataIn = readData2;
-	always@(ALUresult)
-	  dataAddress = ALUresult;
+  wire [31:0] M_readData, W_ALUresult, W_readData;
+  wire [1:0] W_WB;
+  assign dataIn = M_writeData;
+  assign M_readData = dataOut;
+	always@(M_ALUresult)
+	  dataAddress = M_ALUresult;
+	  
+	MEM_WB_reg MEMWB_reg(clk, reset, M_ALUresult, M_writeReg, M_readData, M_WB,
+                                   W_ALUresult, W_writeReg, W_readData, W_WB);
+	
 	// ------------------------------------------------- //
 	
 	
   // ----------------- Write ----------------- //	
- 	mux5b2_1  mux_writeRegister(instruction[15:11], instruction[20:16], RegDst, writeReg);
-	mux32b2_1 mux_writeData(dataOut, ALUresult, MemtoReg, writeData);
-  // ----------------------------------------- //
+
+  mux32b2_1 mux_writeBack(W_readData, W_ALUresult, W_WB[1], W_writeData);
+  
+  
+  hazard_detection_unit hazardDetect(D_instruction, X_rt, X_MemRead, hazardPCenable, hazardIFIDenable, hazardIDEXenable);
+  forwarding_unit forwardingUnit(reset, X_rs, X_rt, M_writeReg, W_writeReg, M_WB, W_WB, fwdA, fwdB);
+ 	// ----------------------------------------- //
 
   
 endmodule

@@ -1,0 +1,19 @@
+// Chris Kenyon and Brandon Nguyen
+
+module mux32b4_1(one, two, three, four, select, out);
+	input [31:0] one, two, three, four; 
+	input [1:0] select;
+	output reg[31:0] out;
+
+	always @(one or two or three or four or select)
+		case(select)
+		2'b00: 
+		  out <= one;
+		2'b01: 
+		  out <= two;
+		2'b10: 
+		  out <= three;
+		2'b11: 
+		  out <= four;
+		endcase
+endmodule
