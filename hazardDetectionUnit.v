@@ -4,9 +4,7 @@ module hazard_detection_unit(D_instruction, X_rt, X_MemRead, hazardPCenable, haz
   input X_MemRead;
   output reg hazardPCenable, hazardIFIDenable, hazardIDEXenable;
 
-wire next_op;
-wire next_rs;
-wire next_rt;
+wire [4:0] next_op, next_rs, next_rt;
 assign next_op = D_instruction[31:26];
 assign next_rs = D_instruction[25:21];
 assign next_rt = D_instruction[20:16];

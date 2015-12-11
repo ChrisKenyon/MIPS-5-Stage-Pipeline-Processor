@@ -11,8 +11,8 @@ entity forwarding_unit is
         W_writeReg      : in     vl_logic_vector(4 downto 0);
         M_WB            : in     vl_logic_vector(1 downto 0);
         W_WB            : in     vl_logic_vector(1 downto 0);
-        fwdA_D          : out    vl_logic_vector(1 downto 0);
-        fwdB_D          : out    vl_logic_vector(1 downto 0);
+        fwdA_D          : out    vl_logic;
+        fwdB_D          : out    vl_logic;
         fwdA_X          : out    vl_logic_vector(1 downto 0);
         fwdB_X          : out    vl_logic_vector(1 downto 0)
     );

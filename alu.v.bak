@@ -2,7 +2,7 @@
 // From solutions
 
 module alu( 
-      output reg signed [31:0] aluresult, 
+      output reg signed [31:0] aluresult = 0, 
 			output zero,
       input[3:0] operation, 
 			input signed [31:0] data_a, 

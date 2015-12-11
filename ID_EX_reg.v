@@ -3,7 +3,7 @@
 
 `timescale 1ns / 1ns
 
-module ID_EX_reg(clk, rst, hazardIDEXenable,
+module ID_EX_reg(clk, rst, hazardIDEXflush,
               D_PCplusFour, D_signExtend, D_rs, D_rt, D_rd, D_readData1, D_readData2,
               D_ALUop, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero, D_funct,
               X_PCplusFour, X_signExtend, X_rs, X_rt, X_rd, X_readData1, X_readData2, 
@@ -13,7 +13,7 @@ module ID_EX_reg(clk, rst, hazardIDEXenable,
   input [5:0] D_funct;
   input [4:0] D_rs, D_rt, D_rd;
   input [1:0] D_ALUop;
-  input hazardIDEXenable, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero;
+  input hazardIDEXflush, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero;
   input clk, rst;
   output reg [31:0] X_PCplusFour, X_readData1, X_readData2, X_signExtend;
   output reg [5:0] X_funct;
@@ -25,7 +25,7 @@ module ID_EX_reg(clk, rst, hazardIDEXenable,
  
  // using hazard bit replaces the need for a mux to set the WB, M, and EX to 0
   always @ (negedge clk or posedge rst) begin
-    if (rst || hazardIDEXenable)
+    if (rst || hazardIDEXflush)
       begin
       X_PCplusFour <= 0;
       X_readData1 <= 0;

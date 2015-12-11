@@ -33,13 +33,14 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
  	
   // ----------------- Decode ----------------- //
   wire [31:0] D_readData1, D_readData2, D_readData1Out, D_readData2Out, D_writeData, D_signExtend, 
-                                        X_readData1, X_readData2, X_writeData, X_signExtend, X_PCplusFour,
+                                        X_readData1, X_readData2, X_signExtend, X_PCplusFour,
               M_ALUresult;
   wire [5:0] X_funct;
   wire [4:0] D_rs, D_rt, D_rd, X_rs, X_rt, X_rd, D_writeReg;
  	wire [3:0] X_EX;
 	wire [2:0] X_M;
-  wire [1:0] X_WB, fwdA_D, fwdB_D;
+  wire [1:0] X_WB;
+  wire fwdA_D, fwdB_D;
   wire X_zero;
   assign D_rs = D_instruction[25:21];
   assign D_rt = D_instruction[20:16];
@@ -52,8 +53,8 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
   assign PCSrc = {D_Jump, D_zero&&D_Branch};
 	always@(reset) dataAddress = 0;
 	
-	mux32b2_1 mux_readData1(M_ALUresult, D_readData1, fwdA_D, D_readData1Out);
-	mux32b2_1 mux_readData2(M_ALUresult, D_readData2, fwdB_D, D_readData2Out);
+	mux32b2_1 mux_readData1(D_readData1, M_ALUresult, fwdA_D, D_readData1Out);
+	mux32b2_1 mux_readData2(D_readData2, M_ALUresult, fwdB_D, D_readData2Out);
 	
 	leftshift2_32b shiftLeftJump({6'b0, D_instruction[25:0]}, jumpComponent); // size mismatch is fine
 	
@@ -75,15 +76,15 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
   wire [1:0] M_WB, fwdA_X, fwdB_X;
   wire M_zero;
  	// ALU
-  mux32b4_1 mux_alu1(X_readData1, M_ALUresult, W_writeData, 0, fwdA_X, aluInput);
-  mux32b4_1 mux_writeData(X_readData2, M_ALUresult, W_writeData, 0, fwdB_X, writeData);
+  mux32b4_1 mux_alu1(X_readData1, W_writeData, M_ALUresult, 0, fwdA_X, aluInput);
+  mux32b4_1 mux_writeData(X_readData2, W_writeData, M_ALUresult, 0, fwdB_X, writeData);
   mux32b2_1 mux_alu2(writeData, X_signExtend, X_EX[0], aluInput2);
   
   alu_control aluControl(X_EX[2:1], X_funct, operation);
-	alu alu(ALUresult, zero, operation, aluInput, aluInput2);
+	alu alu(ALUresult, X_zero, operation, aluInput, aluInput2);
    
                                           // double check that 3 is RegDst and 0 is ALUSrc
-  mux5b2_1  mux_writeRegister(X_rd, X_rt, X_EX[3], X_writeReg);
+  mux5b2_1  mux_writeRegister(X_rt, X_rd, X_EX[3], X_writeReg);
 	  
 	EX_MEM_reg EXMEMreg(clk, reset, ALUresult, writeData, X_writeReg, X_WB, X_M, X_zero,
                                M_ALUresult,M_writeData, M_writeReg, M_WB, M_M, M_zero);
@@ -111,10 +112,10 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	
   // ----------------- Write ----------------- //	
 
-  mux32b2_1 mux_writeBack(W_readData, W_ALUresult, W_WB[1], W_writeData);
+  mux32b2_1 mux_writeBack(W_ALUresult, W_readData, W_WB[1], W_writeData);
   assign D_writeReg = W_writeReg;
-  
-  hazard_detection_unit hazardDetect(D_instruction, X_rt, X_MemRead, hazardPCenable, hazardIFIDenable, hazardIDEXenable);
+  assign D_writeData = W_writeData;
+  hazard_detection_unit hazardDetect(D_instruction, X_rt, X_M[1], hazardPCenable, hazardIFIDenable, hazardIDEXenable);
   forwarding_unit forwardingUnit(reset, D_rs, D_rt, X_rs, X_rt, M_writeReg, W_writeReg, M_WB, W_WB, fwdA_D, fwdB_D, fwdA_X, fwdB_X);
  	// ----------------------------------------- //
 

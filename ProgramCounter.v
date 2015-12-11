@@ -12,8 +12,6 @@ module ProgramCounter(en, in, clk, rst, out);
       out <= 'h3000;
     else if (en)
       out <= in;
-    else 
-      out <= 0;
   end
   
 endmodule

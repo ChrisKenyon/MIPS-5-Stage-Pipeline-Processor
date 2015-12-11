@@ -7,7 +7,7 @@ module mux5b2_1 (a, b, select, out);
   output reg [4:0] out;
   always @ (a or b or select)
   begin
-    if (select == 0)
+    if (select == 1)
       out = a;
     else 
       out = b;

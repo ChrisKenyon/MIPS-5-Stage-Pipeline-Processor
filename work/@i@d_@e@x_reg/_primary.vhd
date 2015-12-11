@@ -4,7 +4,7 @@ entity ID_EX_reg is
     port(
         clk             : in     vl_logic;
         rst             : in     vl_logic;
-        hazardIDEXenable: in     vl_logic;
+        hazardIDEXflush : in     vl_logic;
         D_PCplusFour    : in     vl_logic_vector(31 downto 0);
         D_signExtend    : in     vl_logic_vector(31 downto 0);
         D_rs            : in     vl_logic_vector(4 downto 0);

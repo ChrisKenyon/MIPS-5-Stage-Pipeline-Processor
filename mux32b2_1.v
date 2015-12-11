@@ -7,7 +7,7 @@ module mux32b2_1 (a, b, select, out);
   output reg [31:0] out;
   always @ (a or b or select)
   begin
-    if (select == 1)
+    if (select == 0)
       out = a;
     else 
       out = b;

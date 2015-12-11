@@ -2,7 +2,7 @@ module hazard_detection_unit(D_instruction, X_rt, X_MemRead, hazardPCenable, haz
   input [31:0] D_instruction;
   input [4:0] X_rt;
   input X_MemRead;
-  output hazardPCenable, hazardIFIDenable, hazardIDEXenable;
+  output reg hazardPCenable, hazardIFIDenable, hazardIDEXenable;
 
 wire next_op;
 wire next_rs;

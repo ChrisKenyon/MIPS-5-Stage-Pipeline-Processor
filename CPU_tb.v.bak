@@ -10,23 +10,29 @@ module CPU_tb;
   
 Memory memory(instructionAddress, instruction, dataAddress, dataIn, MemRead, MemWrite, dataOut);  
 CPU cpu(reset, instructionAddress, instruction, dataAddress, dataIn, MemRead, MemWrite, dataOut, clk);
-
+real cycles = 0;
 initial begin
+  reset = 0;
+  #1
   clk = 0;
   reset = 1;
   #5
   reset = 0;
 end
 
-always
+always begin
   #10 clk = !clk;
+  cycles = cycles+0.5;
+  /*if (cycles == 183)
+    $stop;*/
+end
 
 always #100 $display("R0: %h R1: %h \n", cpu.regFile.regFile[0], cpu.regFile.regFile[1]);
   always #100 $display("R2: %h R3: %h \n", cpu.regFile.regFile[2], cpu.regFile.regFile[3]);
   always #100 $display("R4: %h R5: %h \n", cpu.regFile.regFile[4], cpu.regFile.regFile[5]);
   always #100 $display("R6: %h R7: %h \n", cpu.regFile.regFile[6], cpu.regFile.regFile[7]);
   always #100 $display("R8: %h R9: %h \n", cpu.regFile.regFile[8], cpu.regFile.regFile[9]);
-  always #100 $display("R100: %h R11: %h \n", cpu.regFile.regFile[100], cpu.regFile.regFile[11]);
+  always #100 $display("R10: %h R11: %h \n", cpu.regFile.regFile[10], cpu.regFile.regFile[11]);
   always #100 $display("R12: %h R13: %h \n", cpu.regFile.regFile[12], cpu.regFile.regFile[13]);
   always #100 $display("R14: %h R15: %h \n", cpu.regFile.regFile[14], cpu.regFile.regFile[15]);
   always #100 $display("R16: %h R17: %h \n", cpu.regFile.regFile[16], cpu.regFile.regFile[17]);

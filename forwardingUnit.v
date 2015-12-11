@@ -6,7 +6,8 @@ module forwarding_unit(rst, D_rs, D_rt, X_rs, X_rt, M_writeReg, W_writeReg, M_WB
    input rst;
    input [4:0] D_rs, D_rt, X_rs, X_rt, M_writeReg, W_writeReg;
    input [1:0] M_WB, W_WB;
-   output reg [1:0] fwdA_D, fwdB_D, fwdA_X, fwdB_X;
+   output reg [1:0] fwdA_X, fwdB_X;
+   output reg fwdA_D, fwdB_D;
       
   always@(posedge rst)
   begin
