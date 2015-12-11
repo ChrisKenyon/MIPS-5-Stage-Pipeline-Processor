@@ -12,6 +12,7 @@ Memory memory(instructionAddress, instruction, dataAddress, dataIn, MemRead, Mem
 CPU cpu(reset, instructionAddress, instruction, dataAddress, dataIn, MemRead, MemWrite, dataOut, clk);
 
 initial begin
+  reset = 0;
   clk = 0;
   reset = 1;
   #5

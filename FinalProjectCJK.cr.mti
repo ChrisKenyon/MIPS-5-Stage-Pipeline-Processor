@@ -1,11 +1,4 @@
-{C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v}
-Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module forwarding_unit
-
-Top level modules:
-	forwarding_unit
-
-} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v}
+{C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v}
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 -- Compiling module leftshift2
 
@@ -61,14 +54,12 @@ Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
 Top level modules:
 	reg_32_tb
 
-} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v} {2 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v}
+} {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v}
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012
--- Compiling module CPU
-** Warning: C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
-
+-- Compiling module EX_MEM_reg
 
 Top level modules:
-	CPU
+	EX_MEM_reg
 
 } {} {}} {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v} {1 {vlog -work work {C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v}
 Model Technology ModelSim ALTERA vlog 10.1b Compiler 2012.04 Apr 27 2012

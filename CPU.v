@@ -25,20 +25,21 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	assign PCplusFour = PC + 4;
 
 	mux32b4_1 mux_pc(PCplusFour, D_branchAddress, jumpAddress, 0, PCSrc, nextPC);
-  ProgramCounter programCounter(hazardPCenable, nextPC, clk, rst, PC);
+  ProgramCounter programCounter(hazardPCenable, nextPC, clk, reset, PC);
   
-  IF_ID_reg IFIDreg(hazardIFIDenable, clk, rst, instruction, D_instruction, PCplusFour, D_PCplusFour);
+  IF_ID_reg IFIDreg(hazardIFIDenable, clk, reset, instruction, D_instruction, PCplusFour, D_PCplusFour);
  	// ------------------------------------------ //
  	
  	
   // ----------------- Decode ----------------- //
-  wire [31:0] D_readData1, D_readData2, D_writeData, D_signExtend, 
-              X_readData1, X_readData2, X_writeData, X_signExtend, X_PCplusFour;
+  wire [31:0] D_readData1, D_readData2, D_readData1Out, D_readData2Out, D_writeData, D_signExtend, 
+                                        X_readData1, X_readData2, X_writeData, X_signExtend, X_PCplusFour,
+              M_ALUresult;
   wire [5:0] X_funct;
   wire [4:0] D_rs, D_rt, D_rd, X_rs, X_rt, X_rd, D_writeReg;
  	wire [3:0] X_EX;
 	wire [2:0] X_M;
-  wire [1:0] X_WB;
+  wire [1:0] X_WB, fwdA_D, fwdB_D;
   wire X_zero;
   assign D_rs = D_instruction[25:21];
   assign D_rt = D_instruction[20:16];
@@ -47,8 +48,12 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	assign D_funct = D_instruction[5:0];
 	assign D_branchAddress = D_extendedAndShifted + D_PCplusFour; 
   assign jumpAddress = {D_PCplusFour[31:28], jumpComponent};
+  assign D_zero = (D_readData1Out == D_readData2Out);
   assign PCSrc = {D_Jump, D_zero&&D_Branch};
 	always@(reset) dataAddress = 0;
+	
+	mux32b2_1 mux_readData1(M_ALUresult, D_readData1, fwdA_D, D_readData1Out);
+	mux32b2_1 mux_readData2(M_ALUresult, D_readData2, fwdB_D, D_readData2Out);
 	
 	leftshift2_32b shiftLeftJump({6'b0, D_instruction[25:0]}, jumpComponent); // size mismatch is fine
 	
@@ -56,22 +61,22 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
 	controlunit controlUnit(D_opcode, D_RegDst, D_Jump, D_Branch, D_MemRead, D_MemtoReg, D_MemWrite, D_ALUsrc, D_RegWrite, D_ALUop);
   signextender signExtender(D_instruction[15:0], D_signExtend);
 	leftshift2_32b shiftLeftSignExtend(D_signExtend, D_extendedAndShifted);
-	ID_EX_reg IDEXreg(clk, rst, hazardIDEXenable,
+	ID_EX_reg IDEXreg(clk, reset, hazardIDEXenable,
               D_PCplusFour, D_signExtend, D_rs, D_rt, D_rd, D_readData1, D_readData2, D_ALUop, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero, D_funct,
               X_PCplusFour, X_signExtend, X_rs, X_rt, X_rd, X_readData1, X_readData2, X_WB, X_M, X_EX, X_zero, X_funct);
   // ------------------------------------------ //
  	
 
   // ----------------- Execution ----------------- //
-  wire [31:0] aluInput, writeData, aluInput2, ALUresult, M_ALUresult, M_writeData, W_writeData;
+  wire [31:0] aluInput, writeData, aluInput2, ALUresult, M_writeData, W_writeData;
  	wire [4:0] X_writeReg, M_writeReg;
  	wire [3:0] operation;
  	wire [2:0] M_M;
-  wire [1:0] M_WB, fwdA, fwdB;
+  wire [1:0] M_WB, fwdA_X, fwdB_X;
   wire M_zero;
  	// ALU
-  mux32b4_1 mux_alu1(X_readData1, M_ALUresult, W_writeData, 0, fwdA, aluInput);
-  mux32b4_1 mux_writeData(X_readData2, M_ALUresult, W_writeData, 0, fwdB, writeData);
+  mux32b4_1 mux_alu1(X_readData1, M_ALUresult, W_writeData, 0, fwdA_X, aluInput);
+  mux32b4_1 mux_writeData(X_readData2, M_ALUresult, W_writeData, 0, fwdB_X, writeData);
   mux32b2_1 mux_alu2(writeData, X_signExtend, X_EX[0], aluInput2);
   
   alu_control aluControl(X_EX[2:1], X_funct, operation);
@@ -91,6 +96,8 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
   wire [31:0] M_readData, W_ALUresult, W_readData;
   wire [4:0] W_writeReg;
   wire [1:0] W_WB;
+  assign MemRead = M_M[1];
+  assign MemWrite = M_M[0];
   assign dataIn = M_writeData;
   assign M_readData = dataOut;
 	always@(M_ALUresult)
@@ -105,10 +112,10 @@ module CPU(reset, PC, instruction, dataAddress, dataIn, MemRead, MemWrite, dataO
   // ----------------- Write ----------------- //	
 
   mux32b2_1 mux_writeBack(W_readData, W_ALUresult, W_WB[1], W_writeData);
-  
+  assign D_writeReg = W_writeReg;
   
   hazard_detection_unit hazardDetect(D_instruction, X_rt, X_MemRead, hazardPCenable, hazardIFIDenable, hazardIDEXenable);
-  forwarding_unit forwardingUnit(reset, X_rs, X_rt, M_writeReg, W_writeReg, M_WB, W_WB, fwdA, fwdB);
+  forwarding_unit forwardingUnit(reset, D_rs, D_rt, X_rs, X_rt, M_writeReg, W_writeReg, M_WB, W_WB, fwdA_D, fwdB_D, fwdA_X, fwdB_X);
  	// ----------------------------------------- //
 
   
