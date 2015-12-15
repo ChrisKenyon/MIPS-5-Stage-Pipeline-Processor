@@ -9,7 +9,6 @@ module MEM_WB_reg(clk, rst, M_ALUresult, M_writeReg, M_readData, M_WB,
   output reg [4:0] W_writeReg;
   output reg [1:0] W_WB;
   
-  // Pass through values
   always @ (negedge clk or posedge rst) begin
     if (rst)
      begin

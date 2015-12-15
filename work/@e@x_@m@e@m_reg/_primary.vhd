@@ -9,12 +9,10 @@ entity EX_MEM_reg is
         X_writeReg      : in     vl_logic_vector(4 downto 0);
         X_WB            : in     vl_logic_vector(1 downto 0);
         X_M             : in     vl_logic_vector(2 downto 0);
-        X_zero          : in     vl_logic;
         M_ALUresult     : out    vl_logic_vector(31 downto 0);
         M_writeData     : out    vl_logic_vector(31 downto 0);
         M_writeReg      : out    vl_logic_vector(4 downto 0);
         M_WB            : out    vl_logic_vector(1 downto 0);
-        M_M             : out    vl_logic_vector(2 downto 0);
-        M_zero          : out    vl_logic
+        M_M             : out    vl_logic_vector(2 downto 0)
     );
 end EX_MEM_reg;

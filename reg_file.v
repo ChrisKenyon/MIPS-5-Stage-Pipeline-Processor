@@ -24,13 +24,14 @@ end
 
 always@(readReg1 or readReg2)
 begin
-   #1
+   #2
 	 readData1 <= regFile[readReg1];
 	 readData2 <= regFile[readReg2];
 end
 
 always@(RegWrite, writeData, writeReg) 
 begin
+	
 	if(RegWrite && (writeReg != 0))
 		regFile[writeReg] <= writeData;
 end

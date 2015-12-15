@@ -1,0 +1,206 @@
+C:/Users/Brandon/Desktop/CompArchFinal/reg_file.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/reg_file.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module reg_file
+
+Top level modules:
+	reg_file
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/mux32b4_1.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/mux32b4_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux32b4_1
+
+Top level modules:
+	mux32b4_1
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/ID_EX_reg.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/ID_EX_reg.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ID_EX_reg
+
+Top level modules:
+	ID_EX_reg
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/aluCtrl.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/aluCtrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu_control
+
+Top level modules:
+	alu_control
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/IF_ID_reg.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/IF_ID_reg.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module IF_ID_reg
+
+Top level modules:
+	IF_ID_reg
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/ProgramCounter.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/ProgramCounter.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module ProgramCounter
+
+Top level modules:
+	ProgramCounter
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/mux2_1_tb.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/mux2_1_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module test_mux2_1
+
+Top level modules:
+	test_mux2_1
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/memory.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/memory.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module Memory
+
+Top level modules:
+	Memory
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/leftShift2_32b.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/leftShift2_32b.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module leftshift2_32b
+
+Top level modules:
+	leftshift2_32b
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/hazardDetectionUnit.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/hazardDetectionUnit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module hazard_detection_unit
+
+Top level modules:
+	hazard_detection_unit
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/reg_file_tb.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/reg_file_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module test_reg_file
+
+Top level modules:
+	test_reg_file
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/tb_ctrlUnit.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/tb_ctrlUnit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb_ctrlUnit
+
+Top level modules:
+	tb_ctrlUnit
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/alu.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module alu
+
+Top level modules:
+	alu
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/leftShift2.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/leftShift2.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module leftshift2
+
+Top level modules:
+	leftshift2
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/controlMux.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/controlMux.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controlMux
+
+Top level modules:
+	controlMux
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/forwardingUnit.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/forwardingUnit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module forwarding_unit
+
+Top level modules:
+	forwarding_unit
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/tb_aluCtrl.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/tb_aluCtrl.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb_aluCtrl
+
+Top level modules:
+	tb_aluCtrl
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/mux2_1.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/mux2_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux2_1
+
+Top level modules:
+	mux2_1
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/MEM_WB_reg.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/MEM_WB_reg.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module MEM_WB_reg
+
+Top level modules:
+	MEM_WB_reg
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/CPU_tb.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/CPU_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module CPU_tb
+
+Top level modules:
+	CPU_tb
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/ctrlUnit.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/ctrlUnit.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module controlunit
+
+Top level modules:
+	controlunit
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/tb_alu.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/tb_alu.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module tb_alu
+
+Top level modules:
+	tb_alu
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/reg_32_tb.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/reg_32_tb.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module reg_32_tb
+
+Top level modules:
+	reg_32_tb
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/CPU.v {2 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/CPU.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module CPU
+** Warning: C:/Users/Brandon/Desktop/CompArchFinal/CPU.v(13): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+
+Top level modules:
+	CPU
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/EX_MEM_reg.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/EX_MEM_reg.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module EX_MEM_reg
+
+Top level modules:
+	EX_MEM_reg
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/signExtender.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/signExtender.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module signextender
+
+Top level modules:
+	signextender
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/reg_32.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/reg_32.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module reg_32
+
+Top level modules:
+	reg_32
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/mux32b2_1.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/mux32b2_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux32b2_1
+
+Top level modules:
+	mux32b2_1
+
+} {} {}} C:/Users/Brandon/Desktop/CompArchFinal/mux5b2_1.v {1 {vlog -work work -stats=none C:/Users/Brandon/Desktop/CompArchFinal/mux5b2_1.v
+Model Technology ModelSim PE Student Edition vlog 10.4a Compiler 2015.03 Apr  7 2015
+-- Compiling module mux5b2_1
+
+Top level modules:
+	mux5b2_1
+
+} {} {}}

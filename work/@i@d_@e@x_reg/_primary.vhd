@@ -32,7 +32,6 @@ entity ID_EX_reg is
         X_WB            : out    vl_logic_vector(1 downto 0);
         X_M             : out    vl_logic_vector(2 downto 0);
         X_EX            : out    vl_logic_vector(3 downto 0);
-        X_zero          : out    vl_logic;
         X_funct         : out    vl_logic_vector(5 downto 0)
     );
 end ID_EX_reg;

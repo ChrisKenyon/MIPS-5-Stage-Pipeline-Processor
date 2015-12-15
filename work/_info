@@ -8,7 +8,7 @@ Z1 !s100 UGII59GUYQ0[03aja^Y]=2
 Z2 IM>D`dLo7VDmoZDeaH9ZkU0
 Z3 V_Tnf`2];PQ50`8M_hVBiW0
 Z4 dC:\Users\cjken\Dropbox\Documents\School\Computer Architecture\AdvancedProject
-Z5 w1449873003
+Z5 w1450033504
 Z6 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/alu.v
 Z7 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/alu.v
 L0 4
@@ -17,7 +17,7 @@ r1
 31
 Z9 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/alu.v|
 Z10 o-work work -O0
-Z11 !s108 1449877626.682000
+Z11 !s108 1450206494.849000
 Z12 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/alu.v|
 !i10b 1
 !s85 0
@@ -27,7 +27,7 @@ Z13 !s100 XK@n;0oFUj0Zm1]PMA6]23
 Z14 IneFzoHd2_4Z=Jc?PAbE1<0
 Z15 VO@jUmU?36NVK7A3nPT43Q1
 R4
-Z16 w1449521516
+Z16 w1449862082
 Z17 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/aluCtrl.v
 Z18 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/aluCtrl.v
 L0 4
@@ -36,7 +36,7 @@ r1
 31
 Z19 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/aluCtrl.v|
 R10
-Z20 !s108 1449877628.439000
+Z20 !s108 1450206495.537000
 Z21 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/aluCtrl.v|
 !i10b 1
 !s85 0
@@ -46,502 +46,502 @@ Z22 !s100 F[<68MLCVSgTzCV`34:MO3
 Z23 IPU=HfNQedO^S8oRbBmHDE0
 Z24 VHj4Iao1c1AebID2dg;?eP1
 R4
-Z25 w1449521421
-Z26 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v
-Z27 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v
+R16
+Z25 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v
+Z26 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v
 L0 4
 R8
 r1
 31
-Z28 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v|
+Z27 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v|
 R10
-Z29 !s108 1449877632.221000
-Z30 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v|
+Z28 !s108 1450206498.423000
+Z29 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ctrlUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vCPU
-Z31 !s100 ASZ>=J7XaWPXE4?DmR9>33
-Z32 I>hGCVP3nX`]`lLPC1:ZDD3
-Z33 VeJ4<E:k23F`KHLA^G4hDP2
+Z30 !s100 <YEzIYP;kX]ahnfh>PcI51
+Z31 IW^>2EZTCmYVi<E7dfPQfb0
+Z32 VeJ4<E:k23F`KHLA^G4hDP2
 R4
-Z34 w1449873212
-Z35 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v
-Z36 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v
+Z33 w1450206277
+Z34 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v
+Z35 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v
 L0 4
 R8
 r1
 31
-Z37 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v|
+Z36 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v|
 R10
-Z38 n@c@p@u
-Z39 !s108 1449877629.487000
-Z40 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v|
+Z37 n@c@p@u
+Z38 !s108 1450206496.453000
+Z39 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vCPU_tb
-Z41 !s100 LOmdAQL4hh=F;W1deN:Lo2
-Z42 ImnzGM9AL@KeZiF];J>^2n1
-Z43 VJ]cozc2R4cz?MTJoP]UO70
+!i10b 1
+!s100 IE[i1_60`d;1Vz`>ZhmNg1
+Ik8RBbOjJ^b8T``OW`D8mO1
+Z40 VJ]cozc2R4cz?MTJoP]UO70
 R4
-Z44 w1449876910
-Z45 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v
-Z46 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v
+w1450207774
+Z41 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v
+Z42 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v
 L0 6
 R8
 r1
-31
-Z47 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v|
-R10
-Z48 n@c@p@u_tb
-Z49 !s108 1449877631.178000
-Z50 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v|
-!i10b 1
 !s85 0
+31
+!s108 1450207806.626000
+!s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v|
+Z43 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/CPU_tb.v|
 !s101 -O0
+R10
+Z44 n@c@p@u_tb
 vEX_MEM_reg
-Z51 !s100 @XG=]H]NT6T<O64iJERD:2
-Z52 IcRThoNefL;0XN0bNDQI=40
-Z53 Vh<=OMV95;c[h3XcHzOEK70
+Z45 !s100 M`39^]U4ENZcf1P_=9g5a2
+Z46 IR2OFVVedN[PB4iIQgMOVK2
+Z47 VdQ28=HmdlGbf8Je[EAZ=a2
 R4
-Z54 w1449858146
-Z55 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v
-Z56 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v
+Z48 w1450204184
+Z49 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v
+Z50 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v
 L0 1
 R8
 r1
 31
-Z57 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v|
+Z51 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v|
 R10
-Z58 n@e@x_@m@e@m_reg
-Z59 !s108 1449877633.294000
-Z60 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v|
+Z52 n@e@x_@m@e@m_reg
+Z53 !s108 1450206500.953000
+Z54 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/EX_MEM_reg.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vforwarding_unit
-Z61 !s100 ?kbQM^DT5K1Vh=fMMF0=o2
-Z62 IQTZfhG4nH_U4lB^SX81621
-Z63 VghNO`a68<CPI[d1[3G4Qo2
+Z55 !s100 ?kbQM^DT5K1Vh=fMMF0=o2
+Z56 IQTZfhG4nH_U4lB^SX81621
+Z57 VghNO`a68<CPI[d1[3G4Qo2
 R4
-Z64 w1449869590
-Z65 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v
-Z66 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v
+R5
+Z58 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v
+Z59 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v
 L0 5
 R8
 r1
 31
-Z67 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v|
+Z60 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v|
 R10
-Z68 !s108 1449877634.281000
-Z69 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v|
+Z61 !s108 1450206502.288000
+Z62 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/forwardingUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vhazard_detection_unit
-Z70 !s100 zbo8eZ=R:5^;H_D9GEhek3
-Z71 I4LBVaJz8cV>fBbn4S2;d23
-Z72 VKlCFM@XLEclDYnJ3XE2hW1
+Z63 !s100 zbo8eZ=R:5^;H_D9GEhek3
+Z64 I4LBVaJz8cV>fBbn4S2;d23
+Z65 VKlCFM@XLEclDYnJ3XE2hW1
 R4
-Z73 w1449868183
-Z74 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v
-Z75 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v
+R5
+Z66 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v
+Z67 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v
 L0 1
 R8
 r1
 31
-Z76 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v|
+Z68 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v|
 R10
-Z77 !s108 1449877635.402000
-Z78 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v|
+Z69 !s108 1450206505.090000
+Z70 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/hazardDetectionUnit.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vID_EX_reg
-Z79 !s100 0S83MMRg<LizPZi^gR[BV0
-Z80 IGP`NVWf[@eo3H:SOe[[zO3
-Z81 VWHggm2M7a2V3J637n;VA43
+Z71 !s100 hhFY`g6?EniEIZHa[^]z93
+Z72 I@8KIjAl6fb=]jeOD4;>z]3
+Z73 VSVC:VeMVCMC`:7NH7?KH_2
 R4
-Z82 w1449868384
-Z83 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v
-Z84 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v
-L0 6
-R8
-r1
-31
-Z85 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v|
-R10
-Z86 n@i@d_@e@x_reg
-Z87 !s108 1449877636.578000
-Z88 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v|
-!i10b 1
-!s85 0
-!s101 -O0
-vIF_ID_reg
-Z89 !s100 SnKeEo3IUCOW1nH0Xa1Q=1
-Z90 IMW2=:^g0ok;:MKXS>Le@G1
-Z91 Vii@aRzA5V8P_aBWFCCH=o1
-R4
-Z92 w1449775571
-Z93 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v
-Z94 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v
+Z74 w1450204154
+Z75 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v
+Z76 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v
 L0 5
 R8
 r1
 31
-Z95 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v|
+Z77 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v|
 R10
-Z96 n@i@f_@i@d_reg
-Z97 !s108 1449877638.279000
-Z98 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v|
+Z78 n@i@d_@e@x_reg
+Z79 !s108 1450206508.606000
+Z80 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ID_EX_reg.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vIF_ID_reg
+Z81 !s100 8o2J8G94P9c]M`M<a4KBU3
+Z82 I^mZ8QH3fXRo_jZ>b84QZ23
+Z83 VBJF3HA]oc`BERCUL<[4a[0
+R4
+Z84 w1450042576
+Z85 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v
+Z86 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v
+L0 5
+R8
+r1
+31
+Z87 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v|
+R10
+Z88 n@i@f_@i@d_reg
+Z89 !s108 1450206510.257000
+Z90 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/IF_ID_reg.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vleftshift2
-Z99 !s100 0BCP_c2VIjA>j=4oN09U]3
-Z100 I3i9PGXHLQl;8Ef3>?;L^91
-Z101 V5e7aCR4m<MMU1DgmR_bRi1
+Z91 !s100 ]6^KBRz^_WbImfY4l49Z<3
+Z92 I<?oo7Z`^Gg7@akf>N:nM_2
+Z93 V5e7aCR4m<MMU1DgmR_bRi1
 R4
-Z102 w1449521474
-Z103 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v
-Z104 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v
+R16
+Z94 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftshift2.v
+Z95 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftshift2.v
 L0 4
 R8
 r1
 31
-Z105 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v|
+Z96 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftshift2.v|
 R10
-Z106 !s108 1449877639.303000
-Z107 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2.v|
+Z97 !s108 1450206511.833000
+Z98 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftshift2.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vleftshift2_32b
-Z108 !s100 ?VLf88?7;GAHJkEBo9bAX0
-Z109 IcDeUd`G?P]5LJS;Sin6<V0
-Z110 VDLnBizidN4k:D>:akD@ET1
+Z99 !s100 ?VLf88?7;GAHJkEBo9bAX0
+Z100 IcDeUd`G?P]5LJS;Sin6<V0
+Z101 VDLnBizidN4k:D>:akD@ET1
 R4
-Z111 w1449521505
-Z112 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v
-Z113 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v
+R16
+Z102 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v
+Z103 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v
 L0 4
 R8
 r1
 31
-Z114 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v|
+Z104 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v|
 R10
-Z115 !s108 1449877640.410000
-Z116 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v|
+Z105 !s108 1450206514.302000
+Z106 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/leftShift2_32b.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vMEM_WB_reg
-Z117 !s100 NY:ZGXTE;5NY9TX^J>oN21
-Z118 I==OXH58DZl_=gVQX67=WH1
-Z119 VnCZAH=f35EYmUPhaXeoz]0
+Z107 !s100 3jRd4PeQa^KH^X;n5FmYk2
+Z108 IS7Nk`hcj1l;XfN[@UZO6A1
+Z109 VnCZAH=f35EYmUPhaXeoz]0
 R4
-Z120 w1449789139
-Z121 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v
-Z122 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v
+Z110 w1450204171
+Z111 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v
+Z112 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v
 L0 1
 R8
 r1
 31
-Z123 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v|
+Z113 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v|
 R10
-Z124 n@m@e@m_@w@b_reg
-Z125 !s108 1449877641.436000
-Z126 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v|
+Z114 n@m@e@m_@w@b_reg
+Z115 !s108 1450206516.046000
+Z116 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/MEM_WB_reg.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vMemory
-Z127 !s100 84;cTJO3z1>g0R`hT1JA>0
-Z128 INJY<m;<mV2_lh4FP]MXb11
-Z129 V8iPiNVA7<liT>K2?[892h2
+Z117 !s100 84;cTJO3z1>g0R`hT1JA>0
+Z118 INJY<m;<mV2_lh4FP]MXb11
+Z119 V8iPiNVA7<liT>K2?[892h2
 R4
-Z130 w1449258430
-Z131 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v
-Z132 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v
+R16
+Z120 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v
+Z121 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v
 L0 8
 R8
 r1
 31
-Z133 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v|
+Z122 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v|
 R10
-Z134 n@memory
-Z135 !s108 1449877642.336000
-Z136 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v|
+Z123 n@memory
+Z124 !s108 1450206518.841000
+Z125 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/memory.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux2_1
-Z137 !s100 IR5;KhJ?RkLX?1Nh19:ld3
-Z138 ICJ<@JPVHSV8Vc<aE@9Ok;0
-Z139 V1niB`WSNMdi1>P_=<Wcmo2
+Z126 !s100 IR5;KhJ?RkLX?1Nh19:ld3
+Z127 ICJ<@JPVHSV8Vc<aE@9Ok;0
+Z128 V1niB`WSNMdi1>P_=<Wcmo2
 R4
-Z140 w1449521438
-Z141 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v
-Z142 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v
+R16
+Z129 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v
+Z130 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v
 L0 4
 R8
 r1
 31
-Z143 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v|
+Z131 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v|
 R10
-Z144 !s108 1449877643.291000
-Z145 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v|
+Z132 !s108 1450206520.293000
+Z133 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux32b2_1
-Z146 !s100 f]V5XVOaY5SC:aMgE=Fk?3
-Z147 IF27FhYHhc3nFaeBNbWk>j2
-Z148 VO_<k8@G5VXIN^Ni8YOm4l1
+Z134 !s100 f]V5XVOaY5SC:aMgE=Fk?3
+Z135 IF27FhYHhc3nFaeBNbWk>j2
+Z136 VO_<k8@G5VXIN^Ni8YOm4l1
 R4
-Z149 w1449871844
-Z150 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v
-Z151 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v
+R5
+Z137 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v
+Z138 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v
 L0 4
 R8
 r1
 31
-Z152 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v|
+Z139 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v|
 R10
-Z153 !s108 1449877646.820000
-Z154 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v|
+Z140 !s108 1450206523.254000
+Z141 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b2_1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux32b4_1
-Z155 !s100 [iLYBJJjzPzcZ1<e^U6QX0
-Z156 I0Mo?ogM[4HV<d4TT[?m<O0
-Z157 V`i?chHofPCN4>KZza1fkP3
+Z142 !s100 [iLYBJJjzPzcZ1<e^U6QX0
+Z143 I0Mo?ogM[4HV<d4TT[?m<O0
+Z144 V`i?chHofPCN4>KZza1fkP3
 R4
-Z158 w1449854731
-Z159 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v
-Z160 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v
+R16
+Z145 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v
+Z146 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v
 L0 3
 R8
 r1
 31
-Z161 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v|
+Z147 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v|
 R10
-Z162 !s108 1449877647.813000
-Z163 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v|
+Z148 !s108 1450206525.700000
+Z149 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux32b4_1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vmux5b2_1
-Z164 !s100 5HN^QHk<eSPm9Lno2;zDI2
-Z165 IzOUIFV2W48E1?XRdjn5Z81
-Z166 Vcj4dz09hakGf`a2@_`Ebd0
+Z150 !s100 5HN^QHk<eSPm9Lno2;zDI2
+Z151 IzOUIFV2W48E1?XRdjn5Z81
+Z152 Vcj4dz09hakGf`a2@_`Ebd0
 R4
-Z167 w1449872117
-Z168 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v
-Z169 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v
+R5
+Z153 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v
+Z154 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v
 L0 4
 R8
 r1
 31
-Z170 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v|
+Z155 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v|
 R10
-Z171 !s108 1449877645.896000
-Z172 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v|
+Z156 !s108 1450206522.405000
+Z157 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux5b2_1.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vProgramCounter
-Z173 !s100 GOZVMOmlQE_nS?b::6d;O0
-Z174 Ig9PSHKV;zEIH[2^UQ[Xlm2
-Z175 VS=<9k2F`>^Tg47QBD]^Lb3
+Z158 !s100 GOZVMOmlQE_nS?b::6d;O0
+Z159 Ig9PSHKV;zEIH[2^UQ[Xlm2
+Z160 VS=<9k2F`>^Tg47QBD]^Lb3
 R4
-Z176 w1449870610
-Z177 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v
-Z178 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v
+R5
+Z161 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v
+Z162 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v
 L0 3
 R8
 r1
 31
-Z179 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v|
+Z163 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v|
 R10
-Z180 n@program@counter
-Z181 !s108 1449877648.945000
-Z182 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v|
+Z164 n@program@counter
+Z165 !s108 1450206527.064000
+Z166 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/ProgramCounter.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vreg_32
-Z183 !s100 @B?BXKY?7TW;>K80LBY3]1
-Z184 I4D0kjO4<3[=o4?KZMd7N11
-Z185 VHGaC>eD7HFWEZnZSK7kAP1
+Z167 !s100 @B?BXKY?7TW;>K80LBY3]1
+Z168 I4D0kjO4<3[=o4?KZMd7N11
+Z169 VHGaC>eD7HFWEZnZSK7kAP1
 R4
-Z186 w1449521639
-Z187 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v
-Z188 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v
+R16
+Z170 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v
+Z171 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v
 L0 4
 R8
 r1
 31
-Z189 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v|
+Z172 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v|
 R10
-Z190 !s108 1449877650.085000
-Z191 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v|
+Z173 !s108 1450206529.260000
+Z174 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vreg_32_tb
-Z192 !s100 gUiChRVV71db:bWXA<@b83
-Z193 INZ1WH]o;jZT?Ozb5IGF7H0
-Z194 VzKj:H470k?DcWZ3KdFnRM2
+Z175 !s100 gUiChRVV71db:bWXA<@b83
+Z176 INZ1WH]o;jZT?Ozb5IGF7H0
+Z177 VzKj:H470k?DcWZ3KdFnRM2
 R4
-Z195 w1449069472
-Z196 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v
-Z197 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v
+Z178 w1449069472
+Z179 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v
+Z180 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v
 L0 3
 R8
 r1
 31
-Z198 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v|
+Z181 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v|
 R10
-Z199 !s108 1449877651.554000
-Z200 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v|
+Z182 !s108 1450206530.478000
+Z183 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_32_tb.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vreg_file
-Z201 !s100 C9D@09VTa=B`<b<JW=EIP2
-Z202 IWWjbP8Cb<6kL5^VNIh?]<0
-Z203 V:37UVD_N8zG^N9clAhRY[3
+Z184 !s100 Bj5kzAgJ`M[^j_R=7i8^F1
+Z185 IKUz3_F086`n?V7c0NN<Be0
+Z186 V:37UVD_N8zG^N9clAhRY[3
 R4
-Z204 w1449875294
-Z205 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v
-Z206 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v
+Z187 w1450046540
+Z188 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v
+Z189 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v
 L0 4
 R8
 r1
 31
-Z207 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v|
+Z190 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v|
 R10
-Z208 !s108 1449877652.480000
-Z209 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v|
+Z191 !s108 1450206532.185000
+Z192 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vsignextender
-Z210 !s100 U7oEghoib_k97c;HVG<A`2
-Z211 I^7jE1Qejz9P@C[0zN6G6@3
-Z212 V9ko4GG5n<EeO9G2cPi?ZP3
+Z193 !s100 U7oEghoib_k97c;HVG<A`2
+Z194 I^7jE1Qejz9P@C[0zN6G6@3
+Z195 V9ko4GG5n<EeO9G2cPi?ZP3
 R4
-Z213 w1449521398
-Z214 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v
-Z215 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v
+R16
+Z196 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v
+Z197 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v
 L0 4
 R8
 r1
 31
-Z216 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v|
+Z198 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v|
 R10
-Z217 !s108 1449877654.475000
-Z218 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v|
+Z199 !s108 1450206534.012000
+Z200 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/signExtender.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_alu
-Z219 !s100 QIFaf:F3Kd0@5j0?>_07g3
-Z220 IP2QFmlccLi5mdOcX`>a5b3
-Z221 VS_Y`c29E2zA:f=1J@M@hG1
+Z201 !s100 QIFaf:F3Kd0@5j0?>_07g3
+Z202 IP2QFmlccLi5mdOcX`>a5b3
+Z203 VS_Y`c29E2zA:f=1J@M@hG1
 R4
-Z222 w1449069482
-Z223 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v
-Z224 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v
+R16
+Z204 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v
+Z205 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v
 L0 8
 R8
 r1
 31
-Z225 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v|
+Z206 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v|
 R10
-Z226 !s108 1449877655.427000
-Z227 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v|
+Z207 !s108 1450206537.413000
+Z208 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_alu.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtb_aluCtrl
-Z228 !s100 B1;7mnb1olIKQS;8kWXRW1
-Z229 IO1zcmaoU`UP0e^YUUTN=H3
-Z230 V_7onFc=965DN4X=Thk45Y1
+Z209 !s100 B1;7mnb1olIKQS;8kWXRW1
+Z210 IO1zcmaoU`UP0e^YUUTN=H3
+Z211 V_7onFc=965DN4X=Thk45Y1
 R4
-Z231 w1449069493
-Z232 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v
-Z233 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v
+R16
+Z212 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v
+Z213 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v
 L0 10
 R8
 r1
 31
-Z234 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v|
+Z214 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v|
 R10
-Z235 ntb_alu@ctrl
+Z215 ntb_alu@ctrl
+Z216 !s108 1450206538.740000
+Z217 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v|
 !i10b 1
 !s85 0
-Z236 !s108 1449877656.791000
-Z237 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_aluCtrl.v|
 !s101 -O0
 vtb_ctrlUnit
-!i10b 1
-Z238 !s100 eoI:8M`6CQJ7b6nMi_keV0
-Z239 I>Od7CVR2z9B2W>d1B653I0
-Z240 VYM`@R?9GcZ>nDP022[P<>2
+Z218 !s100 eoI:8M`6CQJ7b6nMi_keV0
+Z219 I>Od7CVR2z9B2W>d1B653I0
+Z220 VYM`@R?9GcZ>nDP022[P<>2
 R4
-Z241 w1449069487
-Z242 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v
-Z243 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v
+R16
+Z221 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v
+Z222 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v
 L0 8
 R8
 r1
-!s85 0
 31
-!s108 1449877657.996000
-!s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v|
-Z244 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v|
-!s101 -O0
+Z223 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v|
 R10
-Z245 ntb_ctrl@unit
+Z224 ntb_ctrl@unit
+!i10b 1
+!s85 0
+Z225 !s108 1450206541.382000
+Z226 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/tb_ctrlUnit.v|
+!s101 -O0
 vtest_mux2_1
-Z246 !s100 SV2=h>jdCmL_hX;I6MXg43
-Z247 IIV8c9of74H?:P5gHZ7O^T2
-Z248 VDHaF_JjcnO5[^`XBNoU9P1
+Z227 !s100 SV2=h>jdCmL_hX;I6MXg43
+Z228 IIV8c9of74H?:P5gHZ7O^T2
+Z229 VDHaF_JjcnO5[^`XBNoU9P1
 R4
-Z249 w1449069465
-Z250 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v
-Z251 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v
+Z230 w1449069465
+Z231 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v
+Z232 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v
 L0 3
 R8
 r1
 31
-Z252 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v|
+Z233 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v|
 R10
-Z253 !s108 1449877644.889000
-Z254 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v|
+Z234 !s108 1450206521.496000
+Z235 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/mux2_1_tb.v|
 !i10b 1
 !s85 0
 !s101 -O0
 vtest_reg_file
-Z255 !s100 F:ViL;klW]YQlLaZlo@5>2
-Z256 IfQ0697S>dO:`aSf`09Jci1
-Z257 VRXPa:n0eim@ZP6`@T4K:<2
+Z236 !s100 F:ViL;klW]YQlLaZlo@5>2
+Z237 IfQ0697S>dO:`aSf`09Jci1
+Z238 VRXPa:n0eim@ZP6`@T4K:<2
 R4
-Z258 w1449069477
-Z259 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v
-Z260 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v
+Z239 w1449069477
+Z240 8C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v
+Z241 FC:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v
 L0 3
 R8
 r1
 31
-Z261 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v|
+Z242 !s90 -reportprogress|300|-work|work|C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v|
 R10
-Z262 !s108 1449877653.472000
-Z263 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v|
+Z243 !s108 1450206533.012000
+Z244 !s107 C:/Users/cjken/Dropbox/Documents/School/Computer Architecture/AdvancedProject/reg_file_tb.v|
 !i10b 1
 !s85 0
 !s101 -O0

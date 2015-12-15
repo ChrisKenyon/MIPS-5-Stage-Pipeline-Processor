@@ -1,13 +1,12 @@
 // Chris Kenyon and Brandon Nguyen
 
-
 `timescale 1ns / 1ns
 
 module ID_EX_reg(clk, rst, hazardIDEXflush,
               D_PCplusFour, D_signExtend, D_rs, D_rt, D_rd, D_readData1, D_readData2,
               D_ALUop, D_RegWrite, D_MemtoReg, D_Branch, D_MemRead, D_MemWrite, D_RegDst, D_ALUsrc, D_zero, D_funct,
               X_PCplusFour, X_signExtend, X_rs, X_rt, X_rd, X_readData1, X_readData2, 
-              X_WB, X_M, X_EX, X_zero, X_funct);
+              X_WB, X_M, X_EX, X_funct);
   
   input [31:0] D_PCplusFour, D_readData1, D_readData2, D_signExtend;
   input [5:0] D_funct;
@@ -21,7 +20,6 @@ module ID_EX_reg(clk, rst, hazardIDEXflush,
   output reg [3:0] X_EX;
   output reg [2:0] X_M;
   output reg [1:0] X_WB;
-  output reg X_zero;
  
  // using hazard bit replaces the need for a mux to set the WB, M, and EX to 0
   always @ (negedge clk or posedge rst) begin
@@ -34,7 +32,6 @@ module ID_EX_reg(clk, rst, hazardIDEXflush,
       X_rs <= 0;
       X_rt <= 0;
       X_rd <= 0;
-      X_zero <= 0;
       X_funct <= 0;
       
       X_WB <= 0;
@@ -50,7 +47,7 @@ module ID_EX_reg(clk, rst, hazardIDEXflush,
         X_rs <= D_rs;
         X_rt <= D_rt;
         X_rd <= D_rd;
-        X_zero <= D_zero;
+        
         X_funct <= D_funct;
         
         X_WB <= {D_MemtoReg, D_RegWrite};
